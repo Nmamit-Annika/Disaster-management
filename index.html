@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Disasters Detection Using Deep Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background-color: #f0f4f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #2c7a7b, #4fd1c5);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c7a7b;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #2c7a7b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            section {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Natural Disasters Detection Using Deep Learning</h1>
+        <p>Exploring the power of AI in predicting and managing disasters</p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Natural disasters such as earthquakes, hurricanes, floods, and wildfires are unpredictable and can cause significant damage to property and losses of human lives. These events not only disrupt the functioning of societies but also require extensive efforts for recovery. Given their catastrophic impact, it is essential to have systems in place to predict and warn about these events, allowing people to prepare and take the necessary precautions. The Disaster Prediction System project is an ambitious attempt to develop a software system that utilizes advanced technologies such as machine learning, artificial intelligence, and data analysis to predict natural disasters. The Disaster Prediction System project is critical because it can help reduce the impact of natural disasters by providing early warnings and assistance to people in affected areas. In addition to predicting events, the system can alert relevant authorities and individuals through various channels such as mobile notifications, email alerts, and social media updates, enabling them to take necessary precautions and evacuate to safer locations. This information can help them allocate resources more effectively, reduce response times, and save lives. Historically, many people have suffered greatly due to the lack of proper disaster prediction and management systems. The inadequacy of accurate disaster predictions has often led to delays in evacuations and insufficient mitigation measures post-disaster. During the COVID-19 pandemic, for example, efficient steps could not be followed to prevent the further spread of the virus, revealing critical gaps in management systems. This paper addresses such issues by providing a detailed review of existing procedures and techniques that can be employed during the pre-disaster and post-disaster periods to minimize losses as much as possible</p>
+      <p>India is a vast country prone to a multitude of natural disasters. From the wrath of cyclones like Odisha in 1999 to 2004 Indian Ocean Tsunami to the recent landslides triggered by Cyclone Remal in the Northeast, the country has witnessed the destructive force of nature. According to NDMA , India faces major threats in the recent years.</p>
+<ul>
+<li>Floods: India experiences frequent floods, particularly during the monsoon season. Over 40 million hectares (12% of land) are prone to floods and river erosion. It is getting exacerbated by Glacial Lake Outburst Floods. 
+Examples: Floods in Bihar (2023), Assam (2022)</li>
+<li>Cyclones and Storms: India's coastline is susceptible to cyclones originating in the Bay of Bengal and the Arabian Sea. Of the 7,516 km long coastline, approximately 5,700 km is vulnerable to cyclones and tsunamis.
+Examples: Cyclone Biparjoy (2023) and Cyclone Fani (2019).</li>
+<li>Earthquakes: India is located in a seismically active region, with several fault lines running across the country. 58.6% of the landmass is prone to moderate to very high intensity earthquakes.
+Examples: Earthquake in Mizoram (2022), Earthquake in Sikkim (2011)</li>
+<li>Droughts: Prolonged dry spells and erratic rainfall patterns can lead to severe droughts, affecting agriculture and water resources. 68% of the cultivable area is susceptible to drought.
+Examples: Drought in 66% of Maharashtra (2024).</li>
+<li>Landslides: Hilly and mountainous regions in India are prone to landslides, especially during heavy rainfall or earthquakes. India is considered among the top five landslide-prone countries globally.
+Examples: Landslides in Himachal Pradesh (2023), Landslides in Manipur (2022).</li>
+<li> Heat Waves: Rising temperatures and prolonged periods of high heat can lead to life-threatening heat waves.
+Examples: Heat waves across India (2022, 2023, 2024).
+The country reported 280 heat wave days from 11th March- 18th May, 2022.</li>
+<li>Forest Fires: Dry conditions and human activities can contribute to forest fires, causing environmental damage and air pollution. Based on the forest inventory records, 54.40% of forests in India are exposed to occasional fires
+Examples: Forest fires in Himachal Pradesh (2024) and Forest fires in Goa (2023).</li>
+<li>Industrial and Chemical Accidents: India's growing industrial sector and improper handling of hazardous materials can lead to industrial and chemical accidents.
+Examples: Chemical spill in Surat (2023), Industrial fire in Mumbai (2024)</li>
+</ul>
+<p>The field of AI and ML applications in disaster prediction has witnessed a fascinating evolution. Early research efforts focused on harnessing these technologies for earthquake prediction, with significant advancements in model development. This initial push laid the groundwork for exploring AI/ML’s potential in other areas of disaster management</p>
+    </section>
+
+    <section>
+        <h2>Deep Learning in Disaster Management</h2>
+        <p>ML has effectively addressed elimination of unrelated data and provides faster processing and analysis of information on disaster events, effectively assisting in all phases of disaster management . However, traditional ML methods cannot directly learn the representation of a complex system from the raw data. DL is a subclass of ML that can automatically learn the representation of a complex system for prediction, detection or classification purposes. 
+DL uses long causal chains of neural network (NN) layers that enable higher and more abstract computational models of the real system . DL techniques enable representations with many levels of abstraction, obtained by simple, non-linear modules that at each level transform the representation to a higher more abstract one, in order to finally learn invariant features and very complex functions . DL advancements enable new approaches in the field of disaster management.
+</p>
+    </section>
+
+    <section>
+        <h2>Use Cases and Models</h2>
+        <h4><strong>Uses</strong></h4>
+	<p> CNNs are dominating in computer vision tasks, making satellite and aerial imaging systems crucial in disaster response and damage assessment . ANNs are being widely used as a powerful tool for big data analysis. On the other hand, text-based NNs, namely long short-term memory (LSTMs) and most recently transformers, utilize their architecture in order to perform natural language processing tasks . These types of NNs are used in social media datasets for damage assessment studies. Two DL and one ML architectures commonly used in disaster management are presented next, namely CNN and LSTM, and SVM, respectively, in order to provide a theoretical background.</p>
+	<ul>
+	<li><strong>CNNs</strong></li>
+	<li><p>The CNN architecture is based on convolutional layers (CL). In these layers the data is propagated and applied with tabular multiplication of n*m tabular filters also called kernels, where n equals m in most cases. This process produces different representations of the input data based on the filter applied to them. In each representation various features are uncovered which are projected in feature maps that quantify the stimuli produced by each filter of the convolutional layer . As a result of the convolution, multiple unique transformations of the input data are generated. The number and size of kernels that are used in the convolution are key for the performance of the overall network. After the convolution step, the data is passed through a pooling layer (PL) that groups the convolution results and retains only the most important ones to the network, by keeping the maximum, minimum or average of each part of the data. This entire process is repeated several times depending on the depth of the network before the data is flattened in a one-dimensional space in order to be fed in a fully connected layer (FL) which handles the classification. The softmax layer converts the data into a probability distribution. Figure  shows a CNN architecture. It is important to mention that each CL in the network provides a level of abstraction in the feature extraction process.</p>
+<p> These models assist in identifying flood-prone areas and assessing damage extent.</p></li>
+    <li><img src="https://raw.githubusercontent.com/Nmamit-Annika/Disaster-management/refs/heads/main/Screenshot%202025-04-22%20175222.png" alt="AI Disaster Prediction" width="600"></li>
+        </ul>
+	<ul>
+	<li> <strong>LSTM</strong></li>
+	<li><p>LSTMs are commonly used NNs for text classification in disaster management in social media datasets. LSTMs are a type of recurrent neural network (RNN). RNNs are networks that recurrently apply the same computation for every element in a set of sequential data while passing some information along to the next iteration. Consequently, in each time step, a prediction is made on the input data which in turn affects the future predictions. This operation allows the network to understand complex textual data and extract meaning based on positional data of words in sentences. LSTMs differ from regular RNNs because of their internal cell architecture. LSTMs utilize memory cells called constant error carousels (CECs), which in each time step determine how much information of the current state will be passed on the next time step along with the new input data . The predictions that the LSTM can provide vary. The network output can be used with a probabilistic classifier for classification purposes, or as an element prediction of the next element in a sequence, or even to predict an entire new sequence of elements. The most important hyperparameters to fine tune in an LSTM are the learning rate and the network size. In LSTMs the hyperparameters can be tuned independently, which can save a lot of time during training and experimentation . Figure shows an LSTM architecture. As presented in the following section, the correct and deep analysis of textual data</p></li></ul>
+ <li><img src="https://raw.githubusercontent.com/Nmamit-Annika/Disaster-management/refs/heads/main/Screenshot%202025-04-22%20175505.png" alt="Cyclone Image" width="600"></li>     
+	<h4><strong>Cases</strong></h4>
+            <li><strong>Flood Modeling:</strong> Flood Susceptibility Modelling by Advanced Convolutional Neural Networks (CNN) in the foothills of Southern Western Ghats, Kerala, India.</li>
+<li>Major rivers run through Kottayam, including the Meenachil, Manimala, and Muvattupuzha. The average annual rainfall in Kottayam district is around 2,800 to 3,000 mm. This backwater network is the primary cause of the flooding of this region during heavy rainfall during the monsoon season. Kerala state has witnessed several catastrophic floods in the past five years due to the increased intensity and frequency of extreme events. Kottayam is one of the most flood-affected districts of the State, after Idukki., but there exists no flood susceptibility model for the district; therefore, in the present work, we have chosen Kottayam district as the study area to evaluate the effectiveness of Deep Learning CNN model in flood susceptibility modelling. Researchers developed and compared several machine learning models to assess flood susceptibility in the Kottayam district</li>
+<ul>
+<li><strong>Models Implemented:</strong></li>
+<li><strong>Support Vector Machine (SVM):</strong>
+Support Vector Machines (SVMs) are a popular and influential supervised Machine Learning method widely used for classification and regression problems</li>
+<li><strong>Extreme Gradient Boosting (XGBoost):</strong>
+XGBoost (eXtreme Gradient Boosting) is a popular and robust machine-learning method noted for its excellent prediction performance and efficiency. The gradient boosting framework underpins XGBoost, an ensemble learning approach combining numerous weak learners (often decision trees) to produce a robust prediction mode</li>
+<li><strong>Convolutional Neural Network (CNN):</strong>
+CNN is a Deep Learning model that has proven to be highly effective in a variety of computer vision applications, including image classification, object recognition, and image segmentation (Albawi, Saad, et al. 2017, Wang, Yi, et al. 2020). The application of CNN in flood susceptibility modelling is still rare.</li>
+	<li><strong>Model Evaluation Metrics and Results:</strong>
+<p>When comparing the performance of the three models—SVM, XGBoost, and CNN—the results clearly showed that the CNN model had the edge. With an AUC-ROC score of 0.99, it performed better than SVM (0.96) and XGBoost (0.97). Not only that, but CNN also came out on top across other important evaluation metrics like overall accuracy, precision, recall, specificity, and F1-score. These results highlight just how effective deep learning, especially CNNs, can be in accurately identifying flood-prone areas and supporting better disaster planning and response.</p></li>
+
+            <li><strong>Cyclone Intensity Estimation:</strong> IIT-BBS’ AI model to accurately measure intensity of cyclones in NIO basin. IIT-BBS developed a model using the Mach Band Attention Mechanism for accurate predictions.</li>
+            <li><strong>Earthquake Damage Assessment:</strong>Earthquake Damage Assessment Using Deep Learning, Kahramanmaraş, Turkey. Satellite imagery analyzed with CNNs for real-time damage classification in Turkey.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Challenges</h2>
+        <p>Deep learning (also known as deep structured learning or hierarchical learning) is a family of artificial intelligence to produce intelligent decisions using supervised, semi-supervised or unsupervised learning techniques. Some weaknesses of deep learning are, i.e., it does not work efficiently with bad quality of pictures/ images (having less colours in images), with partial information/ data, small amount of data.</p>
+<p>Deep learning models do not have any understanding of their input, at least not in any human sense. Our own understanding of images, sounds, and language, is grounded in our sensorimotor experience as humans as embodied earthly creatures. Machine learning models have no access to such experiences and thus cannot “understand” their inputs in any human-relatable way.</p>
+
+<p>Deep Learning is largely responsible for today’s growth (also using Artificial Intelligence (AI)). The technology has given computers a lot of powers in most of the areas, for example, ability to recognize natural language/ speech of a human being, medicine, finance, marketing, etc. Deep Learning has transformed computer vision and improved machine translation. Several areas for Deep learning are still uncovered, but in the existing one, several challenges have been mitigated which are being addressed here as:</p>
+<ol> 
+<li><strong> Lots and Lots of data:</strong> Deep Learning algorithms are trained to learn so fast (in minimum time) using data (learning for producing predication/ decision from collected data). Large data sets are required to make sure that the machine delivers desired and accurate results (to respective user/ firms/ organisations).</li>
+
+<li><strong>Overfitting in Neural Networks/ the model:</strong> A  model is typically trained by maximizing its performance on a particular training data set. The model memorizes the training examples but does not learn to generalize to new situations and data set. In general, Overfitting refers to an algorithm that models the “training data” too well (i.e., one that overtrains the model). Overfitting occurs in complex models when having too many parameters relative to the number of observations. Overfitting occurs when an algorithm learns the detail and noise in the training data to the extent that negatively impacts the performance of the model in real-life scenarios.</li>
+
+<li><strong> Hyperparameter Optimization:</strong> Hyperparameters are the parameters which are defined prior to the starting of a learning process. Changing the value of such parameters by a small amount can create a major change in the performance of our implemented model</li>
+
+<li><strong>Requires High-Performance Hardware:</strong> Training a data set for a Deep Learning solution needs lots of data. To solve real world problems using deep learning, the machine needs to be equipped with adequate processing power (e.g., GPU). To ensure better efficiency and less time consumption, researchers move to multi-core high performing GPUs and similar processing units.</li>
+
+<li><strong> Neural Networks are essentially a Blackbox:</strong> Neural networks are essentially Black-boxes and researchers do not know that how they receive results/ conclusions with using neural networks. Basically, we know which data we have feed to machine or deep learning algorithm, but we cannot say anything about outcomes, i.e., how we have received that (operations are largely invisible to humans).</li>
+
+ <li><strong> Lack of Flexibility and Multitasking:</strong> Deep Learning models, once trained, can deliver efficient and accurate solution to a real-world problem. However, the neural network architectures are highly specialized to specific domains of application. To solve a problem, we require retraining and reassessment, i.e., deep learning models which can multitask without the need of reworking on the whole architecture.</li></p></ol>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>In a country like India which is frequent to natural disaster suggest floods , earthquake, cyclones and recurring threats to life and infrastructure. It is important for us to find smarter and efficient solutions in disaster management by leveraging technology efficiently. Deep learning with its ability to process large amount of data and analyse the complex data and provide timely prediction has become a powerfull ally. DL models like CNNs,LSTMs etc have shown that they are powerful tools in mitigating disasters impacts like earthquake detection, flood prone zones and landslide risk assesment.
+However it is important to understand that there are significant challenges such as data scarcity, high competition requirements and the “black box” nature of these type of models. To truly effectively use the power of deep learning we must make efforts to improve data availability and develop models that are more accurate ,quicker and also explainable. Despite these challenges the Deep Learning can still revolutionize how we prepare and response to disaster, using early warning systems and support rescue operations and ultimately help save lives
+</p>
+    </section>
+<section>
+<h3>References</h3>
+<ol>
+<li> Kappi, M., & Bhovi, M. (2024). Artificial intelligence and machine learning for disaster prediction: A scientometric analysis of highly cited papers. Natural Hazards, 120, 10443–10463. https://doi.org/10.1007/s11069-024-06616-y</li>
+
+
+<li> Tyagi, A., & Gillala, R. (2020). Challenges of applying deep learning in real-world applications. In A. Tyagi & R. Gillala (Eds.), Applying deep learning models to real-world problems (Chapter 4). IGI Global. https://doi.org/10.4018/978-1-7998-0182-5.ch004</li>
+
+
+<li> Drishti IAS. (n.d.). Making India disaster resilient. Retrieved April 22, 2025, from https://www.drishtiias.com/daily-updates/daily-news-editorials/making-india-disaster-resilient</li>
+
+
+<li> New Indian Express. (2024, July 22). IIT-BBS’ AI model to accurately measure intensity of cyclones in NIO basin. The New Indian Express. Retrieved April 22, 2025, from https://www.newindianexpress.com/states/odisha/2024/Jul/22/iit-bbs-ai-model-to-accurately-measure-intensity-of-cyclones-in-nio-basin</li>
+
+
+<li>Aygün, Z., Kocaman, M., Aydemir, S., & Konakoğlu, B. (2024). Building damage detection using deep learning architecture with satellite images: The case of the 6 February 2023 Kahramanmaraş earthquake. International Journal of Pioneering Technology and Engineering, 3(2), 53–61. https://doi.org/10.56158/jpte.2024.94.3.02</li>
+
+
+<li>Linardos, V., Drakaki, M., Tzionas, P., & Karnavas, Y. L. (2022). Machine learning in disaster management: Recent developments in methods and applications. Machine Learning and Knowledge Extraction, 4(2), 446–473. https://doi.org/10.3390/make4020020</li>
+
+
+<li>Chamola, V., Hassija, V., Gupta, S., Goyal, A., Guizani, M., & Sikdar, B. (2021). Disaster and pandemic management using machine learning: A survey. IEEE Internet of Things Journal, 8(21), 16047–16071. https://doi.org/10.1109/JIOT.2020.3044966</li>
+
+
+<li>Mustafa, A. M., Agha, R., Ghazalat, L., & Sha'ban, T. (2024). Natural disasters detection using explainable deep learning. Intelligent Systems with Applications, 23, 200430. https://doi.org/10.1016/j.iswa.2024.200430</li>
+
+
+<li>Akhyar, A., Zulkifley, M. A., Lee, J., Song, T., Han, J., Cho, C., Hyun, S., Son, Y., & Hong, B.-W. (2024). Deep artificial intelligence applications for natural disaster management systems: A methodological review. Ecological Indicators, 163, 112067. https://doi.org/10.1016/j.ecolind.2024.112067</li></ol></section>
+<section>
+  <h2><strong>Other works</strong></h2>
+  
+</section>
+
+    <footer>
+        <p>&copy; 2025 Natural Disaster AI Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
